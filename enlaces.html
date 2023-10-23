@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso HTML5-CSS3</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container shadow">
+        <header>
+            <div class="row align-items-center">
+                <div class="col-3"><img src="img/tiburon.jpg" height="125" alt="logo" width="125"></div>
+                <div class="col-9">
+                    <span id="btnmenu" onclick="opendrawer()">&#9776;</span>
+                    <nav id="menu">
+                        <ul class="text-right">
+                            <li>
+                                <a href="index.html">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="parrafos.html">
+                                    Párrafos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="enlaces.html">
+                                    Enlaces
+                                </a>
+                            </li>
+                            <li>
+                                <a href="listas.html">
+                                    Listas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tablas.html">
+                                    Tablas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="formularios.html">
+                                    Formularios
+                                </a>
+                            </li>
+                            <li>
+                                <a href="multimedia.html">
+                                    Multimedia
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+
+        </header>
+        <main class="shadow">
+            <div class="px-3">
+                <h1 class="text-center bg-azul-o text-white py-3 titulo">HTML5 & CSS3</h1>
+            </div>
+            <div class="py-3">
+                <h2 class="text-center">ENLACES</h2>
+            </div>
+            <div id="parrafos" class="px-3">
+                
+                <p>Los enlaces se llaman con la etiqueta a</p>
+                <h3>TIPOS DE ENLACE</h3>
+                <h4>Enlace a una pagina nuestra</h4>
+                <a href="index.html">Ir a Home</a>
+                <h4>Enlace a una pagina de internet</h4>
+                <a href="https://www.pinterest.es/">Ir a Pinterest</a>
+                <h4>Enlace a una pagina con pestaña nueva</h4>
+                <a href="https://youtu.be/FB6qSq8mDMM?si=YHBIS-z0JeW2BkMo" target="_blank">Enlace en una pestaña nueva</a>
+                <h4>Enlace a un programa JavaScript</h4>
+                <a href="javascript:alert ('Que tal colegas')">Enlace a javascript</a>
+                <h4>Enlace a un email</h4>
+                <a href="mailto:newsletter@iam.astonmartinf1.com">Sugerencia al webmaster</a>
+                
+                <div class="text-center">
+                    <h4>Enlace en una imagen</h4>
+                <a href="https://f1tv.formula1.com/"><img src="img/F1_logo.svg.png" alt="logof1" target="_blank" width="200" height="100"></a>
+            </div>
+            </div>
+        </main>
+        <footer>
+            <h1 class="bg-azul-o text-center text-white py-3 titulo">&copy; Óscar Carmena Martín</h1>
+        </footer>
+    </div>
+    <script>
+        function opendrawer() {
+            document.getElementById('menu').style.display = 'block';
+            document.getElementById('menu').style.witdh = '100%';
+        }
+    </script>
+</body>
+
+</html>
